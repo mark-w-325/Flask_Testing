@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("fonts/untitled-font-1.eot");
+  src:url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-1.woff") format("woff"),
+    url("fonts/untitled-font-1.ttf") format("truetype"),
+    url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-design-graphic-tablet-streamline-tablet:before {
+  content: "\6a";
+}
+.icon-icon-man-people-streamline-user:before {
+  content: "\60";
+}
+.icon-icon-email-mail-streamline:before {
+  content: "\52";
+}
+.icon-icon-picture-streamline-1:before {
+  content: "\2a";
+}
+.icon-ibook-laptop:before {
+  content: "\62";
+}
+.icon-database-streamline:before {
+  content: "\63";
+}
+.icon-handle-streamline-vector:before {
+  content: "\65";
+}
+.icon-map-pin-streamline:before {
+  content: "\67";
+}
+.icon-speech-streamline-talk-user:before {
+  content: "\68";
+}
+.icon-bulb:before {
+  content: "\69";
+}
+.icon-heart:before {
+  content: "\6b";
+}
+.icon-settings:before {
+  content: "\64";
+}
+.icon-params:before {
+  content: "\61";
+}
+.icon-apple:before {
+  content: "\66";
+}
+.icon-amazon:before {
+  content: "\6c";
+}
+.icon-aws:before {
+  content: "\6d";
+}
+.icon-facebook:before {
+  content: "\6e";
+}
+.icon-linkedin:before {
+  content: "\6f";
+}
+.icon-twitter-alt:before {
+  content: "\70";
+}
