@@ -1,0 +1,35 @@
+{% extends "base2.html" %}
+{% block header %}
+
+<header id="home" class="header">
+    <!-- Top Bar -->
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse" role="banner">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Company">
+        </a>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="current"><a href="#home">Home</a></li>
+                <li class=""><a href="#focus">Focus</a></li>
+                <li class=""><a href="#works">Works</a></li>
+                <li class=""><a href="#aboutus">About Us</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#pricingtable">Pricing</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav> <!-- / End Top Bar -->
+</header>
+
+{% endblock %}

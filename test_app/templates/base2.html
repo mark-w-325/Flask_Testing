@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Welcome to Influence</title>
+    <!-- Add Fav and touch icons -->
+
+    <!-- Add  jquery.vegas, animate, icon-fonts, pixeden-icons stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='lib/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/owl.theme.default.min.css') }}">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/vegas.min.css') }}">
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='lib/css/animate.css') }}">-->
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pixeden_icons.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}"> -->
+    <!-- Font Styles -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/icon-fonts/styles.css') }}"> -->
+    <!-- Webfonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple"
+          rel="stylesheet" type="text/css">
+    <!-- import jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/cdcafc66d6.js"></script>
+</head>
+<body>
+    <!---- PRE LOADER ---->
+    <div class="preloader" style="display: none;">
+        <div class="status" style="display: none; background-image: url({{ url_for('static', filename='images/loading.gif') }};">&nbsp;</div>
+    </div> <!-- / END PRE LOADER -->
+    {% block header %}{% endblock %}
+    {% block body %}{% endblock %}
+    {% block footer %}{% endblock %}
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<!--<script src="{{ url_for('static', filename='lib/js/wowa.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/js/jquery.nav.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/js/jquery.knob.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/js/smoothscroll.js') }}"></script>-->
+<script src="{{ url_for('static', filename='lib/js/vegas.min.js') }}"></script>
+<script type="text/javascript">
+/* ================================
+===  BACKGROUND SLIDER        ====
+================================= */
+var $body = $('body');
+
+var backgrounds = [
+    { src: "{{ url_for('static', filename='images/backgrounds/bg-1.jpg') }}", fade:1000 },
+    { src: "{{ url_for('static', filename='images/backgrounds/bg-2.jpg') }}", fade:1000 },
+    { src: "{{ url_for('static', filename='images/backgrounds/bg-3.jpg') }}", fade:1000 },
+];
+
+$('html').addClass('animated');
+
+$body.vegas({
+  preload: true,
+  delay:7000,
+  slides: backgrounds
+});
+</script>
+<!-- <script src="{{ url_for('static', filename='js/main_pg.js') }}"></script> -->
+</html>
