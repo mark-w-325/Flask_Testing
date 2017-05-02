@@ -1,0 +1,3 @@
+1.) map fonts to css and save them in assets
+2.) start updating text in webpage to reflect real things
+3.) remove unneeded items from nav bar

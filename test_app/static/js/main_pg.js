@@ -41,7 +41,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 ===  STICKY NAV                 ====
 =================================== */
 
-$(document).ready(function() {
+/*$(document).ready(function() {
   $('.main-nav-list').onePageNav({
     changeHash: true,
     scrollSpeed: 750,
@@ -66,7 +66,7 @@ $(document).ready(function() {
     }
   });
 
-});
+});*/
 
 /*---------------------------------------*/
     /*  SMOOTH SCROLL FRO INTERNAL #HASH LINKS

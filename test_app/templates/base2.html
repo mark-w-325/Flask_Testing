@@ -9,20 +9,21 @@
     <meta name="author" content="">
     <title>Welcome to Influence</title>
     <!-- Add Fav and touch icons -->
+    <link rel="SHORTCUT ICON" HREF="{{ url_for('static', filename='images/favicon.ico') }}">
 
     <!-- Add  jquery.vegas, animate, icon-fonts, pixeden-icons stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="{{ url_for('static', filename='lib/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/owl.theme.default.min.css') }}">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/vegas.min.css') }}">
-    <!--<link rel="stylesheet" href="{{ url_for('static', filename='lib/css/animate.css') }}">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/animate.css') }}">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/pixeden_icons.css') }}">
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> -->
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
     <!-- Font Styles -->
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/icon-fonts/styles.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/icon-fonts/styles.css') }}">
     <!-- Webfonts -->
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple"
           rel="stylesheet" type="text/css">
@@ -31,7 +32,7 @@
     <!-- FontAwesome -->
     <script src="https://use.fontawesome.com/cdcafc66d6.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#bs-navbar-collapse" data-offset="25">
     <!---- PRE LOADER ---->
     <div class="preloader" style="display: none;">
         <div class="status" style="display: none; background-image: url({{ url_for('static', filename='images/loading.gif') }};">&nbsp;</div>
@@ -46,11 +47,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
-<!--<script src="{{ url_for('static', filename='lib/js/wowa.js') }}"></script>
-<script src="{{ url_for('static', filename='lib/js/jquery.nav.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/js/wowa.js') }}"></script>
+<!--<script src="{{ url_for('static', filename='lib/js/jquery.nav.js') }}"></script>-->
 <script src="{{ url_for('static', filename='lib/js/jquery.knob.js') }}"></script>
 <script src="{{ url_for('static', filename='lib/js/owl.carousel.min.js') }}"></script>
-<script src="{{ url_for('static', filename='lib/js/smoothscroll.js') }}"></script>-->
+<script src="{{ url_for('static', filename='lib/js/smoothscroll.js') }}"></script>
 <script src="{{ url_for('static', filename='lib/js/vegas.min.js') }}"></script>
 <script type="text/javascript">
 /* ================================
@@ -71,6 +72,8 @@ $body.vegas({
   delay:7000,
   slides: backgrounds
 });
+
+$('body').scrollspy({ target: '#bs-navbar-collapse' })
 </script>
-<!-- <script src="{{ url_for('static', filename='js/main_pg.js') }}"></script> -->
+<script src="{{ url_for('static', filename='js/main_pg.js') }}"></script>
 </html>
